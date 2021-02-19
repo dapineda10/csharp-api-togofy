@@ -1,0 +1,718 @@
+{
+	"info": {
+		"_postman_id": "4a2f1698-72f9-4ed7-9a29-cf753f3b5c22",
+		"name": "AcmeApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "Crear Menú",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Menu/Create?data={ \"nombre\": \"final\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Menu",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{ \"nombre\": \"final\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Menú",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Menu/Edit?data={\"id_menu\":\"11\",\"nombre\":\"terminando\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Menu",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "data",
+									"value": "{\"id_menu\":\"11\",\"nombre\":\"terminando\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Menu/Delete?data={\"id_menu\":\"7\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Menu",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_menu\":\"7\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Menu por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Menu/Get/14",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Menu",
+								"Get",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en Menu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Menu/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Menu",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sala",
+			"item": [
+				{
+					"name": "Crear Sala",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Sala/Create?data={\"nombre\":\"coowork\",\"ciudad\":\"bogota\",\"pais\":\"Colombia\",\"tipo\":\"administrativa\",\"capacidad\":20,\"disponible\":1}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Sala",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"nombre\":\"coowork\",\"ciudad\":\"bogota\",\"pais\":\"Colombia\",\"tipo\":\"administrativa\",\"capacidad\":20,\"disponible\":1}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Sala",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Sala/Edit?data={\"id_sala\":\"3\",\"nombre\":\"computador\",\"ciudad\":\"caracas\",\"pais\":\"venezuela\",\"tipo\":\"administrativa\",\"capacidad\":25,\"disponible\":1}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Sala",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_sala\":\"3\",\"nombre\":\"computador\",\"ciudad\":\"caracas\",\"pais\":\"venezuela\",\"tipo\":\"administrativa\",\"capacidad\":25,\"disponible\":1}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Sala",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Sala/Delete?data={\"id_sala\":\"3\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Sala",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_sala\":\"3\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Sala por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Sala/Get/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Sala",
+								"Get",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en Sala",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Sala/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Sala",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Responsable",
+			"item": [
+				{
+					"name": "Crear Responsable",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Responsable/Create?data={\"id_responsable\":123452,\"id_documentoFK\":\"1\",\"nombre\":\"danny\",\"apellido\":\"pineda\",\"cargo\":\"programador\",\"fecha_nacimiento\":\"1996-06-15\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Responsable",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_responsable\":123452,\"id_documentoFK\":\"1\",\"nombre\":\"danny\",\"apellido\":\"pineda\",\"cargo\":\"programador\",\"fecha_nacimiento\":\"1996-06-15\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Responsable",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Responsable/Edit?data={\"id_responsable\":\"1234521\",\"id_documentoFK\":\"1\",\"nombre\":\"danny\",\"apellido\":\"pineda gomez\",\"cargo\":\"programador\",\"fecha_nacimiento\":\"1996-06-15\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Responsable",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_responsable\":\"1234521\",\"id_documentoFK\":\"1\",\"nombre\":\"danny\",\"apellido\":\"pineda gomez\",\"cargo\":\"programador\",\"fecha_nacimiento\":\"1996-06-15\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Responsable",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Responsable/Delete?data={\"id_responsable\":\"1234521\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Responsable",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_responsable\":\"1234521\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Responsable por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Responsable/Get/1234521",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Responsable",
+								"Get",
+								"1234521"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en Responsable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Responsable/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Responsable",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reserva",
+			"item": [
+				{
+					"name": "Crear Reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Reserva/Create?data={\"id_salaFK\":5,\"id_responsableFK\":123452,\"cantidad_personas\":0,\"fecha_inicio\":\"2020-02-18 23:00:00\",\"fecha_fin\":\"2020-02-18 23:10:00\",\"catering\":1}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Reserva",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_salaFK\":5,\"id_responsableFK\":123452,\"cantidad_personas\":0,\"fecha_inicio\":\"2020-02-18 23:00:00\",\"fecha_fin\":\"2020-02-18 23:10:00\",\"catering\":1}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Reserva/Edit?data={\"id_reserva\":\"1\",\"id_salaFK\":1,\"id_responsableFK\":123452,\"cantidad_personas\":5,\"fecha_inicio\":\"2020-18-15 08:00\",\"fecha_fin\":\"2020-18-15 09:00\",\"catering\":1}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Reserva",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reserva\":\"1\",\"id_salaFK\":1,\"id_responsableFK\":123452,\"cantidad_personas\":5,\"fecha_inicio\":\"2020-18-15 08:00\",\"fecha_fin\":\"2020-18-15 09:00\",\"catering\":1}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Reserva",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Reserva/Delete?data={\"id_reserva\":\"6\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Reserva",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reserva\":\"6\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Reserva por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Reserva/Get/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Reserva",
+								"Get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en Reserva",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Reserva/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Reserva",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documento",
+			"item": [
+				{
+					"name": "Crear Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Documento/Create?data={\"tipo\":\"Pasaporte\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Documento",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"tipo\":\"Pasaporte\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Documento/Edit?data={\"id_documento\":\"1\",\"tipo\":\"Cédula\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Documento",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_documento\":\"1\",\"tipo\":\"Cédula\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Documento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Documento/Delete?data={\"id_documento\":\"2\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Documento",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_documento\":\"2\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Documento por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Documento/Get/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Documento",
+								"Get",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en Documento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Documento/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Documento",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReservaMenu",
+			"item": [
+				{
+					"name": "Crear ReservaMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ReservaMenu/Create?data={\"id_reservaFK\":8,\"id_salaFK\":\"2\",\"id_menuFK\":\"1\",\"cantidad_personas\":\"0\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReservaMenu",
+								"Create"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reservaFK\":8,\"id_salaFK\":\"2\",\"id_menuFK\":\"1\",\"cantidad_personas\":\"0\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar ReservaMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ReservaMenu/Edit?data={\"id_reservaFK\":8,\"id_salaFK\":\"2\",\"id_menuFK\":\"2\",\"cantidad_personas\":\"0\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReservaMenu",
+								"Edit"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reservaFK\":8,\"id_salaFK\":\"2\",\"id_menuFK\":\"2\",\"cantidad_personas\":\"0\"}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar ReservaMenu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ReservaMenu/Delete?data={\"id_reservaFK\":7,\"id_salaFK\":\"2\",\"id_menuFK\":\"2\"}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReservaMenu",
+								"Delete"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reservaFK\":7,\"id_salaFK\":\"2\",\"id_menuFK\":\"2\"}"
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar ReservaMenu por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ReservaMenu/Get/?data={\"id_reservaFK\":7,\"id_salaFK\":2,\"id_menuFK\":2}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReservaMenu",
+								"Get",
+								""
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "{\"id_reservaFK\":7,\"id_salaFK\":2,\"id_menuFK\":2}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todo en ReservaMenu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ReservaMenu/GetAll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ReservaMenu",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
